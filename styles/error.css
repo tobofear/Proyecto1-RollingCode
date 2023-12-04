@@ -134,7 +134,8 @@ body {
 	} 
 }
 
-
+.title-error, .subtitle-error, .buttom-error {
+font-family: Arial, Helvetica, sans-serif}
 
 .title-error {
     color: white;
@@ -159,7 +160,7 @@ body {
 
 
 .buttom-error {
-    background-color: green;
+    background-color: #4CAF50;
     border: 0;
     padding: 12px 12px;
     color: white;
@@ -167,7 +168,12 @@ body {
 	width: 50%;
     font-size: 1rem;
 	margin: 0 1% ;
-    font-family: Arial, Helvetica, sans-serif;
+    ;
+}
+
+
+.buttom-error :hover{
+    background-color: #337036;
 }
 
 @media (min-width: 576px) {
@@ -184,7 +190,6 @@ body {
     }
 
     .buttom-error {
-        background-color: green;
         border-radius: 1.5rem;
         width: 100%;
         font-size: 1rem;
