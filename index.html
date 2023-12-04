@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Grupo-1" />
+        <meta name="description" content="Blog de turismo de Tucuman" />
+        <meta
+            name="keywords"
+            content="San Miguel, Tucuman, turismo, empanadas, azucar,sandwich de milanesa"
+        />
+        <title>TucRismo - Conocé el jardín de la Republica</title>
+        <link
+            href="./styles/bootstrap.css"
+            rel="stylesheet"
+        />
+
+        <link rel="shortcut icon" href="./assets/logo/TucRismo-icon.png" />
+        <link rel="stylesheet" href="/styles/index.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav
+                class="color-fondo navbar navbar-expand-lg navbar-light fixed-top"
+            >
+                <a class="navbar-brand" href="./index.html"
+                    ><img
+                        class="logo-web"
+                        src="./assets/logo/TucRismo-brand.png"
+                        alt="logo"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/error.html"
+                                >Login</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#subscribeModal"
+                                >Suscripción</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/error.html"
+                                >Contacto</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/error.html"
+                                >Acerca de Nosotros</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div
+                class="modal fade"
+                id="subscribeModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="subscribeModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="subscribeModalLabel">
+                                Suscribete
+                            </h5>
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="nombre"
+                                        >Nombre y Apellido:</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nombre"
+                                        placeholder="Ingresa tu nombre y apellido"
+                                        required
+                                        pattern="[A-Za-z ]+"
+                                        title="Solo se permiten letras y espacios"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Ingresa tu correo electrónico"
+                                        required
+                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                        title="Ingrese una dirección de correo electrónico válida"
+                                    />
+                                </div>
+
+                                <button type="submit" class="btn btn-success">
+                                    Suscribirse
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <!-- carrusel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-target="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+    
+                <!--imagen 1-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active d-item">
+                        <img src="/assets/hero/casitaDeTucuman.jpg" class="d-block w-100 d-img"
+                            alt="slider 1" />
+                        <div class="carousel-caption mt-4">
+                            <p class="mt-5 fs-3 text-uppercase">
+                                Conoce el jardin de la republica
+                            </p>
+                            <h2 class="display-1 fw-bolder text-capitalize">
+                                Tucumán
+                            </h2>
+                            <button onclick="window.location.href='./pages/error.html'" class="btn px-4 py-2 fs-5 mt-5">
+                                Información
+                            </button>
+    
+                        </div>
+                    </div>
+    
+                    <!--imagen 2-->
+                    <div class="carousel-item d-item">
+                        <img src="/assets/hero/plazaIndependenciaNocturna.jpg" class="d-block w-100 d-img"
+                            alt="slider 1" />
+                        <div class="carousel-caption mt-4">
+                            <p class="mt-5 fs-3 text-uppercase">
+                                Conoce el jardin de la republica
+                            </p>
+                            <h2 class="display-1 fw-bolder text-capitalize">
+                                Tucumán
+                            </h2>
+                            <button onclick="window.location.href='./pages/error.html'" class="btn px-4 py-2 fs-5 mt-5">
+                                Información
+                            </button>
+    
+                        </div>
+                    </div>
+    
+                    <!--imagen 3-->
+                    <div class="carousel-item d-item">
+                        <img src="/assets/hero/tafiDelValle.jpg" class="d-block w-100 d-img"
+                            alt="slider 1" />
+                        <div class="carousel-caption mt-4">
+                            <p class="mt-5 fs-3 text-uppercase">
+                                Conoce el jardin de la republica
+                            </p>
+                            <h2 class="display-1 fw-bolder text-capitalize">
+                                Tucumán
+                            </h2>
+                            <button onclick="window.location.href='./pages/error.html'" class="btn px-4 py-2 fs-5 mt-5">
+                                Información
+                            </button>
+    
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    
+            <!-- contenedor cartas y publicidad-->
+    
+            <section class="seccion-principal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 container-cards">
+                            <h2 class="title-cards"><span>|</span>Explora los Destinos Favoritos<span></span></h2>
+    
+                            <div class="row">
+                                <!-- Tarjeta 1 -->
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <img src="/assets/vistas/casa de tucuman.png"
+                                            class="card-img-top img-fluid" alt="Imagen 1"
+                                            style="height: 200px; object-fit: cover;" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Casa historica
+                                            </h5>
+                                            <p class="card-text">
+                                                <strong>9 de noviembre del 2023</strong>
+                                                <hr>
+    
+                                                La Casa Histórica de Tucumán, ubicada en San Miguel de Tucumán, Argentina,
+                                                es un edificio emblemático donde se llevó a cabo la Declaración de la
+                                                Independencia de Argentina en 1816. Esta histórica casa colonial, construida
+                                                en el siglo XVIII, es un símbolo patriótico y un importante sitio cultural
+                                                que preserva el legado de aquel momento crucial en la historia de la
+                                                independencia argentina.
+                                                <hr>
+                                            </p>
+                                            <a href="/pagina-tarjeta1" class="btn link-card">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Tarjeta 2 -->
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <img src="/assets/vistas/cristo redentor.jpg"
+                                            class="card-img-top img-fluid" alt="Imagen 2"
+                                            style="height: 200px; object-fit: cover;" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Cerro San Javier
+                                            </h5>
+                                            <p class="card-text">
+                                                <strong>13 de noviembre del 2023</strong>
+                                                <hr>
+    
+                                                El Cerro San Javier, en Tucumán, Argentina, es una elevación de alrededor de
+                                                1,150 metros sobre el nivel del mar. Conocido por sus impresionantes vistas
+                                                panorámicas, este destino turístico ofrece un paisaje montañoso, carreteras
+                                                sinuosas y un icónico Cristo Redentor en la cima. Es popular por actividades
+                                                al aire libre y su clima más fresco en comparación con la ciudad de San Miguel de Tucuman.
+                                                <hr>
+                                            </p>
+                                            </p>
+                                            <a href="/pagina-tarjeta2" class="btn link-card">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Tarjeta 3 -->
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <img src="/assets/vistas/DIQUE-EL-CADILLAL.webp"
+                                            class="card-img-top img-fluid" alt="Imagen 3"
+                                            style="height: 200px; object-fit: cover;" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                El Cadillal
+                                            </h5>
+                                            <p class="card-text">
+                                                <strong>14 de noviembre del 2023</strong>
+                                                <hr>
+    
+                                                El Dique El Cadillal, ubicado en la provincia de Tucumán, Argentina, es una
+                                                impresionante represa construida sobre el río Salí.Además de su función
+                                                hidroeléctrica y de suministro de agua, el entorno natural que rodea el
+                                                Dique El Cadillal lo convierte en un atractivo destino turístico. Colinas
+                                                cubiertas de vegetación y la extensión del embalse ofrecen un paisaje
+                                                pintoresco que atrae a visitantes y locales por igual.
+                                                <hr>
+                                            </p>
+                                            <a href="/pagina-tarjeta3" class="btn link-card">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Tarjeta 4 -->
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <img src="/assets/vistas/tafi del valle.jpg"
+                                            class="card-img-top img-fluid" alt="Imagen 4"
+                                            style="height: 200px; object-fit: cover;" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                Dique la Angostura
+                                            </h5>
+                                            <p class="card-text">
+                                                <strong>16 de noviembre del 2023</strong>
+                                                <hr>
+    
+                                                El Dique La Angostura en Tafí del Valle, Tucumán, es una impresionante
+                                                represa rodeada de paisajes montañosos. Popular destino turístico, ofrece
+                                                actividades al aire libre en un entorno natural sereno.Además de su función
+                                                principal de regulación hidroeléctrica, el dique atrae a visitantes que
+                                                buscan disfrutar de actividades al aire libre, como la pesca y paseos en
+                                                bote, en medio de una atmósfera tranquila y pintoresca.
+                                                <hr>
+                                            </p>
+                                            <a href="/pagina-tarjeta4" class="btn link-card">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--Slider de paginas -->
+    
+                            <div class="slider-pages-container">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                        <li class="page-item disabled">
+                                            <a class="page-link">Anterior</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="./pages/error.html">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="./pages/error.html">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="./pages/error.html">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="./pages/error.html">Siguiente</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Columna 2 (100% en dispositivos pequeños, 20% en dispositivos medianos y más grandes) -->
+                        <div
+                            class="col-12 col-md-4 container-form order-md-second blog-second second-col"
+                        >
+                            <div class="aside-card">
+                                <form
+                                    onsubmit="window.location.href = '/pages/error.html'; return false;"
+                                    class="form-category"
+                                >
+                                    <input
+                                        type="text"
+                                        class="form-input"
+                                        name="search-category"
+                                        id="input-category"
+                                        placeholder="Buscá lo que quieras..."
+                                    />
+                                    <input
+                                        type="submit"
+                                        class="form-cta"
+                                        value="Buscar"
+                                    />
+                                </form>
+                            </div>
+                            <h2>Categorías</h2>
+                            <div class="aside-card section-c">
+                                <div class="category">
+                                    <div class="category-col">
+                                        <div class="image-wrapper-c">
+                                            <div class="image-c1"></div>
+                                            <div class="overlay-c"></div>
+                                        </div>
+                                        <a
+                                            class="linked"
+                                            href="/pages/error.html"
+                                        >
+                                            <div class="category-name">
+                                                <h1 class="title-c">
+                                                    Gastronomia
+                                                </h1>
+                                                <h2 class="subtitle-c">
+                                                    Desgusta la comida típica.
+                                                </h2>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="category-col">
+                                        <div class="image-wrapper-c">
+                                            <div class="image-c2"></div>
+                                            <div class="overlay-c"></div>
+                                        </div>
+                                        <a
+                                            class="linked"
+                                            href="/pages/error.html"
+                                        >
+                                            <div class="category-name">
+                                                <h1 class="title-c">Paisaje</h1>
+                                                <h2 class="subtitle-c">
+                                                    Descubrí la belleza
+                                                    tucumana.
+                                                </h2>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="category-col">
+                                        <div class="image-wrapper-c">
+                                            <div class="image-c3"></div>
+                                            <div class="overlay-c"></div>
+                                        </div>
+                                        <a
+                                            class="linked"
+                                            href="/pages/error.html"
+                                        >
+                                            <div class="category-name">
+                                                <h1 class="title-c">
+                                                    Hospedaje
+                                                </h1>
+                                                <h2 class="subtitle-c">
+                                                    Encontra donde alojarte.
+                                                </h2>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="title-ads">Publicidad</h2>
+                            <div class="aside-card ads-section">
+                                <div class="ads-card">
+                                    <a
+                                        target="_blank"
+                                        href="https://escaperoomtuc.com/"
+                                        ><img
+                                            src="/assets/ads/escape_room_ad.png"
+                                            alt="Escape Room - Tucuman"
+                                    /></a>
+                                </div>
+                                <div class="ads-card">
+                                    <a
+                                        target="_blank"
+                                        href="https://pintalibreapp.com/"
+                                        ><img
+                                            src="/assets/ads/pinta_libre_ad.png"
+                                            alt="Pinta Libre - App de bebidas"
+                                    /></a>
+                                </div>
+                                <div class="ads-card">
+                                    <a
+                                        target="_blank"
+                                        href="https://ar.hoteles.com/ho798530016/hosteria-atahualpa-yupanqui-tafi-viejo-argentina/"
+                                        ><img
+                                            src="/assets/ads/hotel_ad.png"
+                                            alt="Hosteria Atahualpa Yupanqui - Tafi Viejo"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>Company<span>logo</span></h3>
+
+                <p class="footer-company-name">Company Name © 2023</p>
+            </div>
+
+            <div class="footer-center">
+                <div class="footer-widget">
+                    <div class="footer-widget-heading">
+                        <h3>Subscribe</h3>
+                    </div>
+                    <div class="footer-text mb-25">
+                        <p>
+                            Don’t miss to subscribe to our new feeds, kindly
+                            fill the form below.
+                        </p>
+                    </div>
+                    <div class="subscribe-form">
+                        <form action="#">
+                            <input type="text" placeholder="Email Address" />
+                            <button>
+                                <i class="fab fa-telegram-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit.
+                    Fusce euismod convallis velit, eu auctor lacus vehicula sit
+                    amet.
+                </p>
+
+                <div class="footer-icons"></div>
+            </div>
+        </footer>
+        <script src="./json/slim_min.js"></script>
+        <script src="./json/popper.js"></script>
+        <script src="./json/modal.js"></script>
+        <script
+            src="./json/carousel.js"
+        ></script>
+    </body>
+</html>
