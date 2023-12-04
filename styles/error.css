@@ -151,6 +151,13 @@ body {
 }
 
 
+.fas,.fa-angle-double-left{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+
 .buttom-error {
     background-color: green;
     border: 0;
@@ -162,11 +169,6 @@ body {
 	margin: 0 1% ;
     font-family: Arial, Helvetica, sans-serif;
 }
-.fas,.fa-angle-double-left{
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-}
 
 @media (min-width: 576px) {
     .title-error {
@@ -175,6 +177,12 @@ body {
     .subtitle-error {
         font-size: 1.5rem;
     }
+    .fas,.fa-angle-double-left{
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+
     .buttom-error {
         background-color: green;
         border-radius: 1.5rem;
@@ -182,11 +190,7 @@ body {
         font-size: 1rem;
         margin: 0 1% ;
     }
-    .fas,.fa-angle-double-left{
-        font-size: 1rem;
-        font-weight: bold;
-        color: white;
-    }
+
 
 }
 
@@ -198,6 +202,11 @@ body {
     .subtitle-error {
         font-size: 2rem;
     }
+    .fas,.fa-angle-double-left{
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white;
+    }
     .buttom-error {
         padding: 12px 5px;
         border-radius: 2rem;
@@ -205,11 +214,7 @@ body {
         font-size: 1.1rem;
         margin: 0  ;
     }
-    .fas,.fa-angle-double-left{
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: white;
-    }
+
 }
 
 @media (min-width: 992px){
@@ -218,6 +223,11 @@ body {
     }
     .subtitle-error {
         font-size: 2.5rem;
+    }
+    .fas,.fa-angle-double-left{
+        font-size: 1.35rem;
+        font-weight: bold;
+        color: white;
     }
     .buttom-error {
         background-color: green;
@@ -229,11 +239,7 @@ body {
         font-size: 1.35rem;
         margin: 0 1% ;
     }
-    .fas,.fa-angle-double-left{
-        font-size: 1.35rem;
-        font-weight: bold;
-        color: white;
-    }
+
 }
 
 
