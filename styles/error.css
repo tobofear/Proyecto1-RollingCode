@@ -172,7 +172,7 @@ font-family: Arial, Helvetica, sans-serif}
 }
 
 
-.buttom-error :hover{
+.col-error-second button:hover{
     background-color: #337036;
 }
 
