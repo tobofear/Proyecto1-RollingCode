@@ -1,7 +1,4 @@
 @import url('footer.css');
-@import url('header.css');
-@import url('error.css');
-@import url('font-awesome.css');
 
 
 *{
@@ -25,6 +22,46 @@ main{
     background-color: #FFFEFD;
 
 }
+
+.navbar{
+    background-color: #475344;
+    box-sizing: border-box;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: #475344 0 10px 0px 0px;
+}
+
+.container-fluid{
+    background-color: #475344;
+    height: 100%;
+}
+
+.navbar-brand{
+    color: #FFFEFD;
+    font-size: 30px;
+    font-weight: bold
+}
+
+.navbar-brand:hover{
+    color: #FFFEFD;
+}
+
+.nav-link{
+    color: #FFFEFD;
+    font-weight: bold
+}
+
+.nav-link:hover{
+    color: #4CAF50;
+}
+
+
 
 /*Hero - carrusel*/
 .carousel-caption{
@@ -402,6 +439,12 @@ body .blog-second .ads-section-column, .blog-second .title-ads{
     }
 }
 
-
+/*-----------MODAL------------------*/
+.btn-secondary{
+    background-color: #e2504c;
+}
+.btn-secondary:hover{
+    background-color: #ff6961;
+}
 
 /*Footer*/

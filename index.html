@@ -21,54 +21,36 @@
 
     <body>
         <header>
-            <nav
-                class="color-fondo navbar navbar-expand-lg navbar-light fixed-top"
-            >
-                <a class="navbar-brand" href="./index.html"
-                    ><img
-                        class="logo-web"
-                        src="./assets/logo/TucRismo-brand.png"
-                        alt="logo"
-                /></a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/index.html"><span>TUC</span>RISMO</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/error.html"
-                                >Login</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#"
-                                data-toggle="modal"
-                                data-target="#subscribeModal"
-                                >Suscripción</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/error.html"
-                                >Contacto</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/error.html"
-                                >Acerca de Nosotros</a
-                            >
-                        </li>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Conocenos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Suscripcion
+                        </a>
+                      </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn" type="submit">Buscar</button>
+                    </form>
+                  </div>
                 </div>
+              </nav>
             </nav>
 
             <div
@@ -512,6 +494,49 @@
                 <div class="footer-icons"></div>
             </div>
         </footer>
+        <!--Modal de subscripcion-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Suscripcion</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="formularioSuscripcion">
+                        <div class="mb-3">
+                        <label for="username" class="form-label">Nombre de Usuario:</label>
+                        <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirmar Contraseña:</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="termsCheckbox" required>
+                        <label class="form-check-label" for="termsCheckbox">
+                            Acepto los términos y condiciones
+                        </label>
+                        </div>
+                        
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+                <button type="button" class="btn">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <script src="./json/slim_min.js"></script>
         <script src="./json/popper.js"></script>
         <script src="./json/modal.js"></script>
