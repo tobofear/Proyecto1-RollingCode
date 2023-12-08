@@ -125,7 +125,7 @@ span{
 
 .title-cards {
     color: black; /* Color del texto */
-    font-size: 40px; /* Tamaño de la fuente */
+    font-size: 2.2rem; /* Tamaño de la fuente */
     text-align: center; /* Alineación del texto */
     padding-bottom: 35px;
     padding-top: 10px;
@@ -148,6 +148,36 @@ span{
 
 .link-card:hover{
     color: #FFFEFD;
+}
+
+.descripcion-limitada{
+    max-height: 30em;
+    line-height: 1.5em;
+    transition: -webkit-line-clamp 0.5s ease-in-out, max-height 0.8s ease-in-out;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .descripcion-limitada{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* Número de líneas a mostrar */
+        -webkit-box-orient: vertical;
+        max-height: 12em;
+    }
+    .card-img-top{
+        max-height: 5rem;
+    }
+    .title-cards{
+        font-size: 2rem;
+    }
+}
+@media (min-width:992px){
+    .title-cards {
+        color: black; /* Color del texto */
+        font-size: 40px; /* Tamaño de la fuente */
+        text-align: center; /* Alineación del texto */
+        padding-bottom: 35px;
+}
 }
 
 /*slider de paginacion*/

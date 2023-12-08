@@ -1,0 +1,32 @@
+@import url("/styles/index.css");
+@import url("/styles/normalize.css");
+
+/*====================== MAIN ======================*/
+
+.container-principal{
+    padding: 0;
+}
+
+.form-comentario{
+    max-width: 800px;
+}
+
+.comentario{
+    padding-bottom: 20px;
+}
+
+.title-comentarios {
+    margin-bottom: 20px;
+}
+
+.comentario {
+    margin-bottom: 20px;
+}
+
+.comentario i {
+    margin-right: 10px;
+}
+
+.lista-comentarios {
+    padding: 15px;
+}
