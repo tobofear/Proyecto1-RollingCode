@@ -36,16 +36,16 @@
                         <a class="nav-link" href="#">Contacto</a>
                       
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="./pages/login.html">Login</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link modal-Clicker-nav" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Suscripcion
                         </a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <form onsubmit="window.location.href='../pages/error-login.html'; return false;" class="d-flex" role="search">
+                      <input autocomplete="off" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                       <button class="btn" type="submit">Buscar</button>
                     </form>
                   </div>
@@ -284,6 +284,7 @@
                                     class="form-category"
                                 >
                                     <input
+                                        autocomplete="off"
                                         type="text"
                                         class="form-input"
                                         name="search-category"
@@ -393,44 +394,94 @@
                 </div>
             </section>
         </main>
-        <footer class="footer-distributed">
-            <div class="footer-left">
-                <h3>Company<span>logo</span></h3>
-
-                <p class="footer-company-name">Company Name © 2023</p>
-            </div>
-
-            <div class="footer-center">
-                <div class="footer-widget">
-                    <div class="footer-widget-heading">
-                        <h3>Subscribe</h3>
-                    </div>
-                    <div class="footer-text mb-25">
-                        <p>
-                            Don’t miss to subscribe to our new feeds, kindly
-                            fill the form below.
-                        </p>
-                    </div>
-                    <div class="subscribe-form">
-                        <form action="#">
-                            <input type="text" placeholder="Email Address" />
-                            <button>
-                                <i class="fab fa-telegram-plane"></i>
-                            </button>
-                        </form>
+        <footer>
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name"><span>TUC</span>RISMO</p>
+                </div>
+                <div class="footer-center">
+                    <h3>También te puede interesar:</h3>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.booking.com/index.es-ar.html?aid=2311236;label=es-ar-booking-desktop-MRRNwpxuLSY8eNXQ7griKwS652829001343:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-65526620:lp1000116:li:dec:dm;ws=&gad_source=1&gclid=CjwKCAiA98WrBhAYEiwA2WvhOsC61Wrvn5CjVmjC5e2U0Su71iIdahRggh0ZShiRnyms1urIJNz8iBoCx2UQAvD_BwE"
+                                >Reserva tu hotel</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.tucumanturismo.gob.ar/"
+                                >Turismo Tucumán Oficial</a
+                            >
+                        </li>
+                        <li><a href="https://www.eltucumano.com/"
+                            >Noticias y Más</a
+                        ></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-socialnet">
+                            <a
+                                href="https://www.facebook.com/tucumanturismo"
+                                class="icon-socialnet face"
+                            >
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a
+                                href="https://twitter.com/TucumanTurismo"
+                                class="icon-socialnet twitter-x"
+                            >
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/tucumanturismo"
+                                class="icon-socialnet insta"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@TucumanTurismoOficial"
+                                class="icon-socialnet yout"
+                            >
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="list-socialnet">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://www.facebook.com/tucumanturismo"
+                                    >
+                                        /tucumanturismo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://twitter.com/TucumanTurism"
+                                    >
+                                        @TucumanTurismo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.instagram.com/tucumanturismo"
+                                    >
+                                        @tucumanturismo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.youtube.com/@TucumanTurismoOficial"
+                                    >
+                                    TucumanTurismoOficial</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-right">
-                <p class="footer-company-about">
-                    <span>About the company</span>
-                    Lorem ipsum dolor sit amet, consectateur adispicing elit.
-                    Fusce euismod convallis velit, eu auctor lacus vehicula sit
-                    amet.
-                </p>
-
-                <div class="footer-icons"></div>
+            <div class="footer-line">
+                <p>@Copyrigth 2023 TucRismo</p>
             </div>
         </footer>
         <!--Modal de subscripcion-->
@@ -443,39 +494,35 @@
                 </div>
                 <div class="modal-body">
 
-                    <form id="formularioSuscripcion">
+                    <form onsubmit="window.location.href = '../pages/error-login.html'; return false;" id="formularioSuscripcion">
                         <div class="mb-3">
-                        <label for="username" class="form-label">Nombre de Usuario:</label>
-                        <input type="text" class="form-control" id="username" required>
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input autocomplete="off" type="text" class="form-control" id="name"  minlength="4" pattern="[A-Za-z]{1,32}" maxlength="32" required>
                         </div>
                         <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico:</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input autocomplete="off" type="email" class="form-control" id="email" minlength="10" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                         </div>
-                        <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña:</label>
-                        <input type="password" class="form-control" id="password" required>
-                        </div>
-                        <div class="mb-3">
-                        <label for="confirmPassword" class="form-label">Confirmar Contraseña:</label>
-                        <input type="password" class="form-control" id="confirmPassword" required>
-                        </div>
-                        <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" value="" id="termsCheckbox" required>
-                        <label class="form-check-label" for="termsCheckbox">
-                            Acepto los términos y condiciones
-                        </label>
-                        </div>
-                        
+                    
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
-                <button type="button" class="btn">Save changes</button>
-                </div>
+                        <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cerrar</button>
+                        <input
+                            type="submit"
+                            class="btn"
+                            value="Suscribirse"
+                        />
+                </div>             
+                    </form>   
             </div>
             </div>
         </div>
 
+        <!-- Scripts        -->
+        <script
+        src="https://kit.fontawesome.com/88922d1405.js"
+        crossorigin="anonymous"
+        ></script>
         <script src="./json/slim_min.js"></script>
         <script src="./json/popper.js"></script>
         <script src="./json/modal.js"></script>

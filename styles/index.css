@@ -61,7 +61,9 @@ main{
     color: #4CAF50;
 }
 
-
+.modal-Clicker-nav{
+    cursor: pointer;
+}
 
 /*Hero - carrusel*/
 .carousel-caption{

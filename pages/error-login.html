@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Error 404</title>
+        <link rel="stylesheet" href="../styles/normalize.css" />
+        <link rel="shortcut icon" href="../assets/logo/TucRismo-icon.png" />
+        <link rel="stylesheet" href="../styles/font-awesome.css" />
+        <link rel="stylesheet" href="../styles/error.css" />
+    </head>
+    <body>
+        <main class="main-error">
+            <div class="video-wrapper">
+                <div class="overlay-error"></div>
+                <video
+                    id="bgVideo"
+                    muted
+                    autoplay
+                    loop
+                    class="video-background"
+                    src="../assets/error-video/fondo-error.mp4"
+                    type="video/mp4"
+                ></video>
+            </div>
+            <div class="content-error">
+                <div class="col-error-first">
+                    <h1 class="title-error">Error 404</h1>
+                    <h2 class="subtitle-error">Pagina Aún en Desarrollo</h2>
+                </div>
+                <div class="col-error-second">
+                    <button
+                        onclick="location.href='./login.html'"
+                        class="buttom-error"
+                    >
+                        <i class="fas fa-angle-double-left"> </i>Regresar a
+                        Login
+                    </button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
