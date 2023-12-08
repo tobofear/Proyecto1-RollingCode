@@ -1,0 +1,29 @@
+.gallery-item {
+
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.color-fondo{
+    background-color: #FFFEFD;
+}
+.color-nav{
+    background-color: #DBB89A;
+}
+.color-footer{
+    background-color: #475344;
+}
+.galeria-de-imagenes{
+    margin-top: 20px;
+}
+.image-gallery{
+    margin-top: 8vh;
+}
+.mt-2{
+    max-width: 403px;
+    justify-self: center;
+    margin: 0 auto;
+}
+.title-gallery{
+    margin: 1.5rem 0;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <title>TucRismo - Galeria de Imagenes</title>
+        <link rel="shortcut icon" href="../assets/logo/TucRismo-icon.png" />
+        <link rel="stylesheet" href="../styles/index.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/index.html"><span>TUC</span>RISMO</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Conocenos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link modal-Clicker-nav" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Suscripcion
+                        </a>
+                      </li>
+                    </ul>
+                    <form onsubmit="window.location.href='./pages/error.html'; return false;" class="d-flex" role="search">
+                      <input autocomplete="off" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </nav>
+        </header>
+        <main class="image-gallery">
+            <div class="color-fondo">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="galeria-de-imagenes">
+                            <h1 class="title-gallery">
+                                Galeria de
+                                <span class="text-success">Imagenes</span>
+                            </h1>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image1.png"
+                                alt="Imagen 1"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                Cerro San Javier a 25 kilómetros al oeste de San
+                                Miguel de Tucumán y en medio de la yunga, paisaje ideal 
+                                combinado con el turismo de aventura, ocio y relax.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image2.png"
+                                alt="Imagen 2"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                Tafí del Valle - San José. El viaje se inicia en
+                                Tafi Del Valle, se trepa al cerro Muñoz por la senda
+                                de Río Blanco. La subida es
+                                exigente, en él está el Puesto de Gonzales.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image3.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                El lago, o embalse, La Angostura es un
+                                lago artificial, embalse de aguas dulces producido
+                                por el dique de La Angostura, ubicado al Oeste de la
+                                provincia.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image4.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                Amaicha del Valle es la joya de
+                                los valles calchaquíes. En ella, aún hoy, es posible
+                                interactuar con una de las comunidades indígenas más
+                                puras del país.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image5.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                A tan solo 6 kilómetros de Trancas, se encuentra el
+                                único sitio de la provincia con el rastro de un
+                                santo. San Francisco Solano llegó a América a fines
+                                del Siglo XVI.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image6.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                El panchuque es típico de la provincia de Tucumán,
+                                es una especie de panqueque o crepe
+                                que se elabora con una masa similar a la de los
+                                panqueques tradicionales.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image7.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                Las empanadas norteñas son de las comidas
+                                más populares. Tucumán y Salta suelen competir
+                                para quedarse con el puesto de la mejor empanada
+                                del país.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image8.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                El sándwich de milanesa es un clásico de la
+                                provincia y una de las comidas más
+                                populares del país. Conocedores le dicen
+                                sangüi y hasta tiene un monumento.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image9.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                En lengua quechua, Escaba significa “lugar donde se
+                                encuentran las aguas”. Los colores del cielo y del
+                                dique se confunden, una atractiva opción de paseo y
+                                turismo.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image10.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                Ciudad Sagrada de Quilmes está ubicada en el
+                                valle Calchaquí,al pie del cerro
+                                Alto del Rey.
+                                Son los restos del más extenso asentamiento
+                                precolombino del país.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image11.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                La imponente Catedral,
+                                construida a fines del siglo XVII, refaccionada a principios
+                                del siglo XIX. En una de sus torres se preserva el
+                                reloj que pertenecía al Cabildo.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 gallery-item">
+                            <img
+                                src="../assets/img-gallery/image12.png"
+                                alt="Imagen 3"
+                                class="img-fluid"
+                            />
+                            <p class="mt-2">
+                                Achilata es un helado típico del norte argentino,
+                                principalmente de Tucumán; aunque también se lo puede obtener en las
+                                calles de sus vecinos del norte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </main>
+        <footer>
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name"><span>TUC</span>RISMO</p>
+                </div>
+                <div class="footer-center">
+                    <h3>También te puede interesar:</h3>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.booking.com/index.es-ar.html?aid=2311236;label=es-ar-booking-desktop-MRRNwpxuLSY8eNXQ7griKwS652829001343:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-65526620:lp1000116:li:dec:dm;ws=&gad_source=1&gclid=CjwKCAiA98WrBhAYEiwA2WvhOsC61Wrvn5CjVmjC5e2U0Su71iIdahRggh0ZShiRnyms1urIJNz8iBoCx2UQAvD_BwE"
+                                >Reserva tu hotel</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.tucumanturismo.gob.ar/"
+                                >Turismo Tucumán Oficial</a
+                            >
+                        </li>
+                        <li><a href="https://www.eltucumano.com/"
+                            >Noticias y Más</a
+                        ></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-socialnet">
+                            <a
+                                href="https://www.facebook.com/tucumanturismo"
+                                class="icon-socialnet face"
+                            >
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a
+                                href="https://twitter.com/TucumanTurismo"
+                                class="icon-socialnet twitter-x"
+                            >
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/tucumanturismo"
+                                class="icon-socialnet insta"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@TucumanTurismoOficial"
+                                class="icon-socialnet yout"
+                            >
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="list-socialnet">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://www.facebook.com/tucumanturismo"
+                                    >
+                                        /tucumanturismo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://twitter.com/TucumanTurism"
+                                    >
+                                        @TucumanTurismo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.instagram.com/tucumanturismo"
+                                    >
+                                        @tucumanturismo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.youtube.com/@TucumanTurismoOficial"
+                                    >
+                                    TucumanTurismoOficial</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line">
+                <p>@Copyrigth 2023 TucRismo</p>
+            </div>
+        </footer>
+        <!--Modal de subscripcion-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Suscripcion</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form onsubmit="window.location.href = '../pages/error-login.html'; return false;" id="formularioSuscripcion">
+                        <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input autocomplete="off" type="text" class="form-control" id="name"  minlength="4" pattern="[A-Za-z]{1,32}" maxlength="32" required>
+                        </div>
+                        <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input autocomplete="off" type="email" class="form-control" id="email" minlength="10" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        </div>
+                    
+                </div>
+                <div class="modal-footer">
+                        <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cerrar</button>
+                        <input
+                            type="submit"
+                            class="btn"
+                            value="Suscribirse"
+                        />
+                </div>             
+                    </form>   
+            </div>
+            </div>
+        </div>
+
+        <!-- Scripts        -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous"></script>
+        <script
+        src="https://kit.fontawesome.com/88922d1405.js"
+        crossorigin="anonymous"
+        ></script>
+        <script src="../json/slim_min.js"></script>
+        <script src="../json/popper.js"></script>
+        <script src="../json/modal.js"></script>
+        
+    </body>
+</html>
