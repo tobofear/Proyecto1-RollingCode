@@ -155,16 +155,16 @@
 @media (min-width: 768px) {
   .main-contacto{
     display: block;
-    height: 92vh;
+    height: 92%;
     margin-top: 8vh;
   }
   .main-section{
     width: 100%;
-    height: 82vh;
+    height: 88%;
   }
   .formMap-section{
     display: flex;
-    height: 85%;
+    height: 100%;
     box-sizing: border-box;
   }
   /*Seccion de formulario*/
@@ -254,14 +254,14 @@
     margin-left: 3%;
     border-radius: 0.5rem;
     height: 10rem;
-    font-size: 1.1rem;
+    font-size: auto;
     border: none;
     margin-top: 0.5rem;
   }
   .footerForm-contacto{
     display: flex;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .btnContacto{
     width: 100%;
@@ -522,7 +522,7 @@
 
 
 /*Dispositivos grandes*/
-@media (min-width: 992px) and (min-height:701px){
+@media (min-width: 992px) and (min-height:800px){
   .main-contacto{
     margin-top: 7vh;
     height: 93vh;
