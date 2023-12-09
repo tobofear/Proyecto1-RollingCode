@@ -14,163 +14,198 @@
         href="../styles/bootstrap.css"
         rel="stylesheet"
     />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
     <link rel="shortcut icon" href="../assets/logo/TucRismo-icon.png" />
     <link rel="stylesheet" href="../styles/contacto.css" />
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><span>TUC</span>RISMO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Conocenos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="./login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link modal-Clicker-nav" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Suscripcion
-                  </a>
-                </li>
-              </ul>
-              <form onsubmit="window.location.href='./error.html'; return false;" class="d-flex" role="search">
-                <input autocomplete="off" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn" type="submit">Buscar</button>
-              </form>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><span>TUC</span>RISMO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conocenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link modal-Clicker-nav" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Suscripcion
+                </a>
+              </li>
+            </ul>
+            <form onsubmit="window.location.href='./error.html'; return false;" class="d-flex" role="search">
+              <input autocomplete="off" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn" type="submit">Buscar</button>
+            </form>
           </div>
-        </nav>
+        </div>
       </nav>
+    </nav>
   </header>
 
-  <main class="main__Contacto">
-    <section class="main__Section">
-      <article class="contact-section">
-        <div class="text-center text-light">
-          <h1 class="fs-1">¿En qué podemos ayudarte?</h1>
-          <p class="fs-5">
-            Para mas asesoramiento, comunicate con nosotros. <br />
-            Brindamos atención en línea las 24hs o podes acercarte a nuestra
-            oficina:
-          </p>
+  <main class="main-contacto">
+    <section class="main-section">
+      <div class="columnMain-contacto text-contacto">
+        <h2 >¿En qué podemos ayudarte?</h2>
+        <p>
+          ¡Comunicate con nosotros!
+          Brindamos atención en línea las 24hs o puedes acercarte a nuestras
+          oficinas.
+        </p>
+      </div>
+      <div class="columnMain-contacto formMap-section">       
+        <div class="divForm-contacto leftColumn-contacto">
+          <h3 class="titleForm-contacto">
+            Deja tu consulta. Nos contactaremos a la brevedad:
+          </h3>
+          <form onsubmit="window.location.href='./error.html'; return false;" class="form-contacto">
+            <div>
+              <label for="nombreCompleto" class="labelContacto">Nombre</label> <br>
+              <input              
+              class="inputContacto"
+              autocomplete="off"
+              placeholder="Ingrese su nombre completo"
+              type="text"
+              name="nombreCompleto"
+              minlength="4" 
+              pattern="^[A-Za-z\s]+${4,32}" 
+              maxlength="32"
+              required
+              />
+            </div>
+            <div>
+              <label for="correo-contact" class="labelContacto">Correo electronico</label>
+              <input 
+              autocomplete="nope"
+              placeholder="Ingrese su correo electronico"
+              type="text" 
+              class="inputContacto" 
+              id="correo-contact" 
+              name="coreo"
+              minlength="10" 
+              maxlength="50"
+              oninput="validateEmail(this)"
+              required>
+            </div>
+            <div>
+              <label for="Telefono" class="labelContacto">Télefono</label> <br>
+              <input 
+              class="inputContacto" 
+              placeholder="Ingrese su numero de telefono (ej: +543812345)"
+              type="tel"
+              minlength="12"
+              maxlength="20"
+              pattern="^\+\d{1,4}\d{1,10}$" 
+              id="Telefono"
+              autocomplete="off"
+              required
+              />
+            </div>
+            <div class="consultaForm-contacto">
+              <label class="labelContacto">Consulta (max. 350 caracteres)</label>
+              <textarea
+                class="inputContacto-consulta"
+                autocomplete="off"
+                placeholder="Escriba su consulta"
+                name="Dejanos tu consulta"
+                cols="40"
+                rows="4"
+                minlength="10"
+                maxlength="350"
+                required
+              ></textarea>
+            </div>
+            <div class="footerForm-contacto">
+              <button
+                type="submit"
+                class="btnContacto btn-outline-light btn"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
         </div>
+        <div class ="rightColumn-contacto">
+          <h3 class="titleMaps-contacto">
+            ¿Donde encontrarnos?
+          </h3>
+          <div class="maps-area">
+            <div class="maps-location-md">
+              <iframe class="maps-frame-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.278048109776!2d-65.2044623!3d-26.831107299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c10406bc79d%3A0xbc3eb3c0c5af9d05!2sAv.%2024%20de%20Septiembre%20486%2C%20T4000CNJ%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1702014435618!5m2!1ses-419!2sar" 
+              width="600" height="350" style="border:0;" 
+              allowfullscreen="" loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="contact-section">
+      <div class="column-contacto info-contacto">
+        <div
+        class="element-contacto celnumber-contacto"
+        >
+          <div class="logo-infoContacto">
+            <i class="fa fa-phone"></i>
+          </div>
+          <div class="text-infoContacto">
 
-        <div class="row text-light">
-          <div
-            class="col-lg-4 col-md-12 col-sm-12 text-center main__divContact"
-          >
-            <i class="fa fa-solid fa-location-dot fa-3x"></i>
-            <a
-              class="main__Mail"
-              href="https://www.google.com.ar/maps/place/RollingCode+School/@-26.8367006,-65.2159566,15z/data=!3m1!4b1!4m12!1m6!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!2sRollingCode+School!8m2!3d-26.8367009!4d-65.2072018!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018"
-              ><h3>Dirección</h3></a
-            >
-            <h5>San Miguel de Tucuman</h6>
-            <p> Av. 24 de Septiembre 486</p>
-            <p>
-              Lunes a viernes: <br />
-              8hs-20hs
-            </p>
+            <h3 class="elementTitle-contacto">Teléfono</h3>
+            <p>+54 9 381-5673959</p>
           </div>
-          <div
-            class="col-lg-4 col-md-12 col-sm-12 text-center main__divContact"
-          >
-            <i class="fa fa-solid fa-phone fa-3x"></i>
-            <h3 class="main__Mail">Teléfono</h3>
-            <p>381-5673959</p>
-            <p>381-1594765</p>
+        </div>
+        <div
+        class="element-contacto email-contacto"
+        >
+          <div class="logo-infoContacto">
+            <i class="fa fa-envelope"></i>
           </div>
-          <div
-            class="col-lg-4 col-md-12 col-sm-12 text-center main__divContact"
-          >
-            <i class="fa fa-solid fa-envelope fa-3x"></i>
-            <a class="main__Mail" href="https://mail.google.com">
+          <div class="text-infoContacto">
+
+            <a class="elementTitle-contacto" href="https://mail.google.com">
               <h3>Email</h3>
             </a>
             <p>tuc_rismo@gmail.com</p>
           </div>
-
-          
         </div>
-        <div class="row text-light">
-          <div class="col-xl-6 col-md-12 col-sm-12 my-4 text-center">
-            <iframe class="maps-gg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.278048109776!2d-65.2044623!3d-26.831107299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c10406bc79d%3A0xbc3eb3c0c5af9d05!2sAv.%2024%20de%20Septiembre%20486%2C%20T4000CNJ%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1702014435618!5m2!1ses-419!2sar" 
-            width="600" height="350" style="border:0;" 
-            allowfullscreen="" loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div
+        class="element-contacto location-contacto"
+        >
+          <div class="logo-infoContacto">            
+            <i class="fa fa-location-dot"></i>
           </div>
-          
-          <div class="col-xl-6 col-md-12 col-sm-12 main__Form text px-5 ">
-            <form action="" class="mb-3">
-              <h3 class="text-center p-3">
-                Dejanos tu consulta y nos contactaremos a la brevedad
-              </h3>
-              <p>
-                <label>Nombre completo</label>
-                <br />
-                <input
-                  class="main__formP"
-                  type="text"
-                  name="Nombre Completo"
-                  maxlength="30"
-                  required
-                />
-              </p>
-              <p>
-                <label>Direccion de correo electronico</label>
-                <br />
-                <input
-                  class="main__formP"
-                  type="email"
-                  name="E-mail"
-                  maxlength="30"
-                  required
-                />
-              </p>
-              <p>
-                <label>Telefono</label>
-                <br />
-                <input class="main__formP" type="tel" name="Telefono" />
-              </p>
-              <p class="block">
-                <label>Mensaje</label>
-                <br />
-                <textarea
-                  class="main__formP"
-                  placeholder="Escriba su consulta"
-                  name="Dejanos tu consulta"
-                  cols="40"
-                  rows="4"
-                  maxlength="350"
-                  required
-                ></textarea>
-              </p>
-              <button
-                type="submit"
-                class="btn btn-outline-light main__button"
-              >
-                Enviar
-              </button>
-            </form>
+          <div class="text-infoContacto">
+            <a
+            class="elementTitle-contacto"
+            href="https://www.google.com.ar/maps/place/RollingCode+School/@-26.8367006,-65.2159566,15z/data=!3m1!4b1!4m12!1m6!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!2sRollingCode+School!8m2!3d-26.8367009!4d-65.2072018!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018"
+            ><h3>Dirección</h3></a
+            >
+            <P>
+              Av. 24 de Septiembre 486, San Miguel de Tucuman
+              <br>Lunes a Viernes: 8hs-20hs
+            </p>
           </div>
         </div>
-
-      </article>
-    </section>
+      </div>
+      <div class="column-contacto maps-contacto">
+        <div class="maps-location">
+          <iframe class="maps-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.278048109776!2d-65.2044623!3d-26.831107299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c10406bc79d%3A0xbc3eb3c0c5af9d05!2sAv.%2024%20de%20Septiembre%20486%2C%20T4000CNJ%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1702014435618!5m2!1ses-419!2sar" 
+          width="600" height="350" style="border:0;" 
+          allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>   
+      </div>
+    </aside>
   </main>
   <footer>
     <div class="footer-distributed">
@@ -279,7 +314,7 @@
                   </div>
                   <div class="mb-3">
                   <label for="email" class="form-label">Correo Electrónico:</label>
-                  <input autocomplete="off" type="email" class="form-control" id="email" minlength="10" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                  <input autocomplete="off" type="email" class="form-control" id="email" minlength="10" maxlength="50" oninput="validateEmail(this)" required>
                   </div>
               
           </div>
@@ -297,16 +332,27 @@
   </div>
 
   <!-- Scripts        -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function validateEmail(input) {
+        const pattern = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+        const isValid = pattern.test(input.value);
+        
+        if (!isValid) {
+            input.setCustomValidity('El correo electrónico debe tener un dominio válido.');
+        } else {
+            input.setCustomValidity('');
+        }
+    }
+    </script>
   <script
   src="https://kit.fontawesome.com/88922d1405.js"
   crossorigin="anonymous"
   ></script>
-  <script src="./json/slim_min.js"></script>
-  <script src="./json/popper.js"></script>
-  <script src="./json/modal.js"></script>
+  <script src="../json/slim_min.js"></script>
+  <script src="../json/popper.js"></script>
+  <script src="../json/modal.js"></script>
   <script
-      src="./json/carousel.js"
+      src="../json/carousel.js"
   ></script>
   </body>
 </html>
