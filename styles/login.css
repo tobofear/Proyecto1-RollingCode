@@ -134,8 +134,31 @@ body{
 
 .hrline {
     position: relative;
-    width: 37%;
+    width: 30%;
     bottom: 0.35rem;
+}
+
+@media (min-width: 400px){
+    .separation-line p{
+        font-size: 0.8rem;
+        transition: font-size 0.5s ease;
+    }
+    .hrline {
+        position: relative;
+        width: 37%;
+        bottom: 0.35rem;
+    }
+}
+
+.formularioIngreso .modal-Clicker{
+    margin-top: 0;
+    font-size: 0.65rem;
+}
+
+.formularioIngreso .form-check-input{
+    margin: 0;
+    margin-top: 0.4rem;
+    font-size: 0.6rem;
 }
 
 .modalFooter-line{
@@ -168,6 +191,30 @@ body{
 .form-check-label{
     margin: 0.3rem 0 0.5rem;
 }
+
+@media (min-width: 400px){
+    .separation-line p{
+        font-size: 0.8rem;
+        transition: font-size 0.5s ease;
+    }
+    .hrline {
+        position: relative;
+        width: 37%;
+        bottom: 0.35rem;
+    }
+    
+    .formularioIngreso .modal-Clicker{
+    font-size: 0.7rem;
+    }
+
+    .formularioIngreso .form-check-input{
+        margin: 0;
+        margin-top: 0.3rem;
+        font-size: 0.8rem;
+    }
+
+}
+
 
 /*Ingreso con Facebook y Google*/
 
@@ -325,13 +372,27 @@ body{
     }
 }
 
-@media (min-width:900px){ 
+@media (min-width:1000px){ 
     .login-left{
         width: 50%;
     }
     .modal-Clicker{
         font-size: 0.9rem;
     }
+    .separation-line p{
+        font-size: 0.8rem;
+        transition: font-size 0.5s ease;
+    }
+    .hrline {
+        position: relative;
+        width: 37%;
+        bottom: 0.35rem;
+    }
+    
+    .formularioIngreso .modal-Clicker{
+    font-size: 1rem;
+    }
+
     .separation-line p{
         font-size: 1rem;
     }
