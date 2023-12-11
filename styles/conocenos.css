@@ -1,0 +1,53 @@
+@import url("/styles/index.css");
+@import url("/styles/normalize.css");
+
+/* ================= MAIN ================= */
+.rounded-start {
+    border-radius: 0;
+    width: 100%;
+    height: 100%; /* Ajusta la altura al 100% del contenedor padre */
+    object-fit: cover;
+}
+.rounded-image {
+    border-radius: 50%;
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px; /* Ajusta el tamaño según sea necesario */
+    object-fit: cover; /* Ajusta el comportamiento de la imagen */
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.custom-card {
+    width: 100%; /* Ancho completo por defecto (mobile-first) */
+    max-width: 250px; /* Máximo ancho para evitar que sea demasiado ancho en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.carousel-inner .carousel-item .carousel-conocenos{
+    top: 25%;
+}
+
+.carousel-inner .carousel-item .carousel-conocenos h2{
+    font-size: 3rem;
+    transition: ease font-size 0.5s;
+    margin: 0;
+}
+
+@media (min-width: 500px){
+    .carousel-inner .carousel-item .carousel-conocenos h2{
+        font-size: 5rem;
+        margin: 0;
+    }
+}
+
+
+
+@media (min-width: 768px){
+    .carousel-inner .carousel-item .carousel-conocenos h2{
+        font-size: 7rem;
+        margin: 0;
+    }
+}
