@@ -335,7 +335,7 @@
             <div class="container mt-5">
                 <h2 class="title-comentarios"><span>|</span>Dejanos tu comentario<span></span></h2>
                 
-                <form class="form-comentario">
+                <form onsubmit="window.location.href='./error-cdT.html';return false" class="form-comentario">
                     <div class="mb-3">
                         <label for="nombreUsuario" class="form-label">Nombre de usuario:</label>
                         <input type="text" class="form-control" id="nombreUsuario" minlength="4"  maxlength="32" required pattern="[a-zA-Z0-9]{1,32}" title="Ingrese un nombre de usuario válido (solo letras y números)">
